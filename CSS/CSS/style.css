@@ -1,0 +1,38 @@
+/*style{font-family: 'Titan One', cursive;}*/
+
+
+* {
+    margin: 0;
+}
+
+/*header{
+    border: 7px dashed blue;
+    height: 100px;
+    
+    background-color: rgb(55, 150, 100);
+    background-image: url(https://www.tailorbrands.com/wp-content/uploads/2020/07/mcdonalds-logo.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-
+
+}*/
+
+/*main {
+    
+    background-color: rgb(55, 150, 100);
+    background-image: url(https://www.tailorbrands.com/wp-content/uploads/2020/07/mcdonalds-logo.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-origin: content-box;
+    background-clip: content-box;
+    background-attachment: fixed;
+*/
+
+main {
+    color: midnightblue;
+    background: radial-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 255, 0.9)),
+    url(https://www.tailorbrands.com/wp-content/uploads/2020/07/mcdonalds-logo.jpg) no-repeat right top / 100px border-box content-box fixed;
+
+}
