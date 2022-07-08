@@ -224,7 +224,7 @@ console.log(canDrive)
 //OPERADOR DE STRING
 
 //comparison (comparação)
-console.log(7 == 7)
+console.log(7 == 3)
 
 //concatenation (concatenação)
 console.log('De'+'ivi'+'s'+'on')
