@@ -110,5 +110,3 @@ console.log(techs.shift())
 let index = techs.indexOf('css')
 
 console.log("O elemento do array está na posição: "+index)
-
-

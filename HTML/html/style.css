@@ -1,0 +1,86 @@
+h1 {
+  width: 650px;
+  margin: auto;
+  border: solid 3px #fa541c;
+  font-family: 'Pacifico', cursive;
+  font-size: 50px;
+  text-align: center;
+  color: #fa541c;
+  background-color: #000000;
+  border-radius: 5px;
+}
+
+#pizzaLogo {
+  width: 100px;
+}
+
+body {
+  background-image: url(./arquivos/fundo.png);
+}
+
+#tamanho {
+  margin: auto;
+  border: 1px solid #fa541c;
+  text-align: center;
+  width: 230px;
+}
+
+ul {
+  font-family: 'Pacifico', cursive;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000000;
+  font-size: 25px;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #fa541c;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #111111;
+}
+
+div {
+  float: left;
+  margin: 15px;
+}
+
+#calabresa,
+#napolitana,
+form {
+  border-radius: 10px;
+  border: solid 3px #fa541c;
+  background-color: #000000;
+  color: #fa541c;
+  width: 250px;
+  font-size: 22px;
+  font-family: 'Pacifico', cursive;
+  text-align: center;
+}
+
+#imgCalabresa {
+  border-radius: 20px;
+  padding: 15px;
+  width: 200px;
+}
+#imgNapolitana {
+  border-radius: 20px;
+  padding: 15px;
+  width: 200px;
+}
+
+#imgCoca {
+  border-radius: 20px;
+  padding: 15px;
+  width: 200px;
+}

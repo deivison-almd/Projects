@@ -1,4 +1,4 @@
-/* 1ª PARTE
+// 1ª PARTE
 
 
 
@@ -23,12 +23,12 @@ createPhrases()
 console.log('fim do programa')
 
 
-FIM DA PRIMEIRA PARTE
+//FIM DA PRIMEIRA PARTE
 
 
 
 
-2ª PARTE
+//2ª PARTE
 
 
 
@@ -51,12 +51,12 @@ sum(345,655)
 sum(234,77)
 
 
-FIM DA SEGUNDA PARTE
+//FIM DA SEGUNDA PARTE
 
 
 
 
-3ª PARTE
+//3ª PARTE
 
 //Função é um liquidificador
 
@@ -69,10 +69,10 @@ const copo = fazerSuco('banana', 'maçã')
 console.log(copo)
 
 
-FIM DA TERCEIRA PARTE
+//FIM DA TERCEIRA PARTE
 
 
-4ª PARTE
+//4ª PARTE
 
 
 //function scope
@@ -89,36 +89,36 @@ console.log(creatThink())
 console.log(subject)
 
 
-FIM DA QUARTA PARTE
+//FIM DA QUARTA PARTE
 
 
-5ª PARTE
+//5ª PARTE
 
 //function hosting
 
-sayMyName();
+SayMyName();
 
-function sayMyName() {
+function SayMyName() {
     console.log('Pedro')
 }
 
 
-FIM DA QUINTA PARTE
+//FIM DA QUINTA PARTE
 
 
-6ª PARTE
+//6ª PARTE
 
 
 //arrow function
 
-const sayMyName = (nome) => {
+const sAyMyName = (nome) => {
     console.log(nome)
 }
 
-sayMyName('Deivison')
+sAyMyName('Deivison')
 
 
-7ª Parte
+//7ª Parte
 
 
 //caalback function
@@ -138,9 +138,8 @@ sayMyName(
     }
 )
 
-FIM DA SETIMA PARTE
+//FIM DA SETIMA PARTE
 
-*/
 
 /*Function() constructor
 
