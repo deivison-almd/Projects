@@ -12,60 +12,78 @@
 
 <body>
     <header>
-        <h1> Bem-vindo ao PizzSam <img id="pizzaLogo" src="./arquivos/image-pizza.png" alt=""></h1>
+        <h1> Bem-vindo ao PizzSam <img id="pizzaLogo" src="./arquivos/image-pizza.png" alt=""></h1><br>
         <nav>
             <ul>
-                <li><a href="#refrigerante">Refrigerante</a></li>
-                <li><a href="#pizzas-tradicionais">Pizzas Tradicionais</a></li>
+                <li><a href="#refrigerante">Refrigerante</a>
+                <li>
+                <li><a href="#pizzaTradicional">Pizzas Tradicionais</a>
+                <li>
                 <li><a href="#pizzas-especiais">Pizzas Especiais</a></li>
                 <li><a href="#sobremesas">Sobremesas</a></li>
             </ul>
         </nav>
-    </header>
-    <div id="calabresa">
-        <p>Calabresa</p>
-        <img id="imgCalabresa" src="./arquivos/calabresa.jpg" alt="image-pizza" />
-        <p>R$35,00</p>
-        <p id="tamanho"> Selecione um tamanho</p>
-        <input type="radio" name="fav_language" value="grande">
-        <label for="tamanho">Grande</label><br>
-        <input type="radio" name="fav_language" value="media">
-        <label for="tamanho">Média</label><br>
-        <input type="radio" name="fav_language" value="pequena">
-        <label for="tamanho">Pequena</label><br>
+    </header><br>
+
+
+
+
+    <div id="pizzas">
+        <h3 id="subtittle">Pizzas Tradicionais</h3>
+        <ul>
+            <li>
+                <div id="box">
+                    <a href="#calabresa">
+                        <p id="texto">Calabresa</p>
+                        <img id="imgPizza" src="./arquivos/calabresa.jpg" alt="image-pizza" />
+                        <p id="texto">R$35,00</p>
+                    </a>
+                </div>
+            </li>
+
+
+
+            
+            <li>
+                <div id="box">
+                    <a href="#napolitana">
+                        <p id="texto">Napolitana</p>
+                        <img id="imgPizza" src="./arquivos/napolitana.jpeg" alt="image-pizza" />
+                        <p id="texto">R$35,00</p>
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+
+
+    <div id="refrigerante">
+        <h3 id="subtittle">Refrigerante</h3>
+        <ul>
+            <li>
+                <div id="box">
+                    <a href="#coca-cola">
+                        <input type="">
+                        <p id="texto">Coca-Cola</p>
+                        <img id="imgRefrigerante" src="./arquivos/refrigerante_coca_cola_350ml.png" alt="image-coca" />
+                        <p>R$8,00</p>
+                    </a>
+                </div id="box">
+            </li>
+            <li>
+                <div id="box">
+                    <a href="#guarana">
+                        <p id="texto">Guaraná Antartica</p>
+                        <img id="imgRefrigerante" src="./arquivos/guarana-antarctica.jpg" alt="image-guarana" />
+                        <p>R$8,00</p>
+                    </a>
+                </div>
+            </li>
+        <ul>
 
     </div>
-    <div id="napolitana">
-        Napolitana
-        <img id="imgNapolitana" src="./arquivos/napolitana.jpeg" alt="image-pizza" />
-        <p>R$35,00</p>
-        <p id="tamanho"> Selecione um tamanho</p>
-       <p >
-        <input type="radio" name="fav_language" value="grande">
-        <label for="tamanho">Grande</label><br>
-        <input type="radio" name="fav_language" value="media">
-        <label for="tamanho">Média</label><br>
-        <input type="radio" name="fav_language" value="pequena">
-        <label for="tamanho">Pequena</label><br>
-       </p>
 
-    </div>
-
-
-
-
-
-
-
-
-    <div>
-        <p>Coca-Cola</p>
-        <img id="imgCoca" src="./arquivos/refrigerante_coca_cola_350ml.png" alt="image-coca" />
-        <br>
-        <p>R$8,00</p>
-
-        <input type="submit" value="Adicionar ao Carrinho">
-    </div>
 
 </body>
 
