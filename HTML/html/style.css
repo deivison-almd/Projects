@@ -1,13 +1,19 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
 h1 {
-  width: 650px;
+
   margin: auto;
-  border: solid 3px #fa541c;
-  font-family: 'Pacifico', cursive;
+  border-bottom: solid 2px red;
+  border-top: solid 2px red;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 50px;
   text-align: center;
-  color: #fa541c;
+  color: red;
   background-color: #000000;
-  border-radius: 5px;
+  
 }
 
 #pizzaLogo {
@@ -15,13 +21,16 @@ h1 {
 }
 
 ul {
-  font-family: 'Pacifico', cursive;
+  font-family: 'Source Sans Pro', sans-serif;  
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #000000;
-  font-size: 25px;
+  /* background-color: #000000; */
+  font-size: 20px;
+}
+.categoria {
+  text-align: center;
 }
 
 li {
@@ -30,7 +39,7 @@ li {
 
 li a {
   display: block;
-  color: #fa541c;
+  color: red;
   text-align: center;
   padding: 10px;
   text-decoration: none;
@@ -41,39 +50,46 @@ li a:hover {
 
 #subtittle {
   text-align: left;
-  color: red;
-  margin: 0px 50px;
+  color:orangered;
+  margin: 5px 20px;
+  font-size: 25px;
 }
 
-#pizzas {
+/* #pizzas {
   border-radius: 3px;
-  border: solid 1px #fa541c;
+  border: solid 2px red;
   background-color: #000000;
-  color: #fa541c;
-  font-size: 22px;
-  font-family: 'Pacifico', cursive;
-  text-align: left;
-}
+  color: red;
+  margin: 10px 40px;
+  font-size: 20px;
+  font-family: 'Source Sans Pro', sans-serif;  text-align: left;
+} */
 
 #refrigerante {
   border-radius: 3px;
-  border: solid 1px #fa541c;
+  border: solid 1px red;
   background-color: #000000;
-  color: #fa541c;
-  font-size: 22px;
-  font-family: 'Pacifico', cursive;
-  text-align: center;
+  color: red;
+  margin: 40px;
+  font-size: 20px;
+  font-family: 'Source Sans Pro', sans-serif;  text-align: center;
 }
 
 #box {
   float: left;
-  
 }
 
-body {
-  background-image: url(./arquivos/fundo.png);
+body html {
+  height: 100%;
+  margin: 0;
+  
+}
+.container {
+  margin: auto;
+  background-image: url(./arquivos/background-pizza.jpg);
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
+  background-position: center;
   background-attachment: fixed;
 }
 
@@ -89,6 +105,27 @@ span {
 
 #texto {
   margin: auto;
+  text-align: center;
+  font-size: 20px;
+}
+
+#obs {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #141414;
+  border-radius: 3px;
+}
+
+#topico {
+  background-color: red;
+  color: #000000;
+}
+
+.pull-left {
+  text-align: left;
+  width: 100%;
+}
+.pull-right {
+  float: right;
 }
 
 #tamanho {
@@ -97,13 +134,9 @@ span {
   width: 230px;
 }
 
-
-
 div {
   margin-top: 20px;
 }
-
-
 
 #imgPizza {
   border-radius: 20px;
@@ -111,10 +144,115 @@ div {
   width: 200px;
 }
 
-
-
 #imgRefrigerante {
   border-radius: 20px;
   padding: 15px;
   width: 200px;
+}
+
+.btnOpenModal {
+  font-size: x-large;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+hr {
+  border: 0px;
+  border-top: 1px solid lightgray;
+}
+
+.modal-container {
+  width: 100vw;
+  position: fixed;
+  top: 30px;
+  display: none;
+  z-index: 999;
+  justify-content: center;
+}
+
+.glass {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0)) ;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 40px;
+  text-align: center;
+  background-color: #000000;
+  border: 1px solid red;
+  width:auto;
+}
+
+.active {
+  display: flex;
+}
+
+.active .modal {
+  animation: modal 0.4s;
+}
+@keyframes modal {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -60px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+span {
+  margin: 10px auto;
+}
+
+.btns {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  padding: 30px;
+}
+
+.btns button a {
+  font-size: medium;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.btnOK {
+  background-color:#092b00 !important;
+  font-size: 16px;
+  border-radius: 3px;
+  width: 120px;
+  height: 50px;
+  border-style: groove;
+}
+
+.btnClose {
+  background-color: darkred !important;
+  font-size: 16px;
+  border-radius: 3px;
+  width: 120px;
+  height: 50px;
+}
+
+@media (max-width: 500px) {
+  .modal {
+    padding: 15px;
+    width: 80%;
+  }
+
+  span,
+  .btns button a {
+    font-size: smaller;
+  }
 }

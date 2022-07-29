@@ -1,67 +1,101 @@
 * {
     margin: 0;
     padding: 0;
-}
-
-html {
-    width: 100%;
-    height: 100%;
-    font-family: sans-serif;
-    font-size: 20px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
+    width: 100vw;
+    height: 100vh;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    width: 100%;
-    min-height: 100%;
-    background-color:slateblue;
-    color: white;
+    justify-content: center;
+    background-color: #0a0c21;
 }
 
-h1 {
-    display: inline-block;
+.btnOpenModal {
+    font-size:  x-large;
     padding: 10px;
-    border-radius: 10px;
-    background-color: white;
-    color: slateblue
+    border: none;
+    border-radius: 5px;
+    background-color: blueviolet;
+    color: white;
+    cursor: pointer;
 }
 
-.checkboxModal {
+hr {
+    border: 0px;
+    border-top: 1px solid lightgray;
+}
+
+.modal-container {
+    width: 100vw;
+    position: fixed;
+    top: 30px;
     display: none;
-}
-
-#modalExemplo:checked + .modal {
-    display: flex;
+    z-index: 999;
+    justify-content: center;
 }
 
 .modal {
-    display: none;
-    position: fixed;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    width: 70%;
 }
 
-.modal .fecharModal {
-    position: absolute;
-    top: 10px;
-    right: 10px;
+.active {
+    display: flex;
+    animation: modal .1s;
 }
-.modal .fecharModal {
+@keyframes modal {
+    from {
+        opacity: 0;
+        transform: translate(0, -60px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0, 0,0);
+    }
+}
+
+span {
+    margin: 10px auto;
+}
+
+.btns {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.btns button a{
+    font-size: medium;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
     cursor: pointer;
-    color: red;
 }
-.modal .conteudoModal {
-    width: 75%;
-    height: 50%;
-    border: 1px solid lightgrey;
-    border-radius: 10px;
-    background-color: white;
-    box-shadow: 3px 3px 5px black;
-    overflow: auto;
+
+.btnsOK {
+    background-color: blue !important;
+}
+
+.btnsClose {
+    background-color: red !important;
+}
+
+@media (max-width: 500px) {
+    .modal {
+        padding: 10px;
+        width: 80%;
+    }
+
+    span , .btns button a{
+        font-size: smaller;
+    }
 }

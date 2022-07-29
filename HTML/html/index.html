@@ -1,90 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Pizzaria do Sam</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 </head>
 
-<body>
-    <header>
-        <h1> Bem-vindo ao PizzSam <img id="pizzaLogo" src="./arquivos/image-pizza.png" alt=""></h1><br>
-        <nav>
+
+<body class="container">
+    <div>
+        <header>
+            <h1> Bem-vindo ao PizzSam <img id="pizzaLogo" src="./arquivos/image-pizza.png" alt=""></h1><br>
+            <nav>
+                <ul class="categoria">
+                    <li><a href="#refrigerante">Refrigerante</a>
+                    <li>
+                    <li><a href="#pizzaTradicional">Pizzas Tradicionais</a>
+                    <li>
+                    <li><a href="#pizzas-especiais">Pizzas Especiais</a></li>
+                    <li><a href="#sobremesas">Sobremesas</a></li>
+                </ul>
+            </nav>
+        </header><br>
+
+
+
+
+        <div id="pizzas" class="glass">
+            <h3 id="subtittle">Pizzas Tradicionais</h3>
             <ul>
-                <li><a href="#refrigerante">Refrigerante</a>
                 <li>
-                <li><a href="#pizzaTradicional">Pizzas Tradicionais</a>
+                    <div id="box">
+                        <a href="#modal-calabresa" class="btnOpenModal" onclick="openModal()">
+                            <p id="texto">PIZZA DE CALABRESA</p>
+                            <img id="imgPizza" src="./arquivos/calabresa.jpg" alt="image-pizza" />
+                            <p id="texto">R$14,90 a R$34,90</p>
+                        </a>
+                        <div id="modal-calabresa" class="modal-container">
+                            <div class="modal">
+                                <span>
+                                    <p id="texto">PIZZA DE CALABRESA</p>
+                                    <img id="imgPizza" src="./arquivos/calabresa.jpg" alt="image-pizza" />
+                                    <p id="topico">Selecione um tamanho</p>
+                                    <form class="pull-left">
+                                        <input type="radio" id="G" name="size" value="op1">
+                                        <label id="alinhar" for="G">Grande <label class="pull-right">34,90</label></label><br>
+                                        <input type="radio" id="M" name="size" value="op2">
+                                        <label for="M">Média <label class="pull-right">24,90</label></label><br>
+                                        <input type="radio" id="P" name="size" value="op3">
+                                        <label for="P">Pequena <label class="pull-right">14,90</label></label><br>
+
+                                    </form>
+                                    <p id="topico">Alguma observação?</p>
+                                    <textarea name="observacao" id="obs" cols="40" rows="4" placeholder="Adicione as observações aqui..." minlength="0" maxlength="140"></textarea>
+                                </span>
+                                <div class="btns">
+                                    <button class="btnOK" onclick="closeModal()">Adicionar</button>
+                                    <button class="btnClose" onclick="closeModal()">Cancelar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
                 <li>
-                <li><a href="#pizzas-especiais">Pizzas Especiais</a></li>
-                <li><a href="#sobremesas">Sobremesas</a></li>
+                    <div id="box">
+                        <a href="#modal-napolitana" class="btnOpenModal" onclick="openModal()">
+                            <p id="texto">Pizza Napolitana</p>
+                            <img id="imgPizza" src="./arquivos/napolitana.jpeg" alt="image-pizza" />
+                            <p id="texto">R$14,90 a R$34,90</p>
+                        </a>
+                        <div id="modal-napolitana" class="modal-container">
+                            <div class="modal">
+                                <span>
+                                    <p id="texto">Pizza Napolitana</p>
+                                    <img id="imgPizza" src="./arquivos/napolitana.jpeg" alt="image-pizza" />
+                                    <p id="topico">Selecione um tamanho</p>
+                                    <form class="pull-left">
+                                        <input type="radio" id="G" name="size" value="op1">
+                                        <label for="G">Grande </label><label class="pull-right">34,90</label><br>
+                                        <input type="radio" id="M" name="size" value="op2">
+                                        <label for="M">Média</label><br>
+                                        <input type="radio" id="P" name="size" value="op3">
+                                        <label for="P">Pequena</label><br>
+                                    </form>
+                                    <p id="topico">Alguma observação?</p>
+                                    <textarea name="observacao" id="obs" cols="40" rows="4" placeholder="Adicione as observações aqui..." minlength="0" maxlength="140"></textarea>
+                                </span>
+                                <div class="btns">
+                                    <button class="btnOK" onclick="closeModal()">Adicionar</button>
+                                    <button class="btnClose" onclick="closeModal()">Cancelar</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </li>
+
+
+
+
+                <li>
+                    <div id="box">
+                        <a href="#napolitana">
+                            <p id="texto">Napolitana</p>
+                            <img id="imgPizza" src="./arquivos/napolitana.jpeg" alt="image-pizza" />
+                            <p id="texto">R$35,00</p>
+                        </a>
+                    </div>
+                </li>
             </ul>
-        </nav>
-    </header><br>
+        </div>
 
 
 
+        <div id="refrigerante">
+            <h3 id="subtittle">Refrigerante</h3>
+            <ul>
+                <li>
+                    <div id="box">
+                        <a href="#coca-cola">
 
-    <div id="pizzas">
-        <h3 id="subtittle">Pizzas Tradicionais</h3>
-        <ul>
-            <li>
-                <div id="box">
-                    <a href="#calabresa">
-                        <p id="texto">Calabresa</p>
-                        <img id="imgPizza" src="./arquivos/calabresa.jpg" alt="image-pizza" />
-                        <p id="texto">R$35,00</p>
-                    </a>
-                </div>
-            </li>
+                            <p id="texto">Coca-Cola</p>
+                            <img id="imgRefrigerante" src="./arquivos/refrigerante_coca_cola_350ml.png" alt="image-coca" />
+                            <p>R$8,00</p>
+                        </a>
+                    </div id="box">
+                </li>
+                <li>
+                    <div id="box">
+                        <a href="#guarana">
+                            <p id="texto">Guaraná Antartica</p>
+                            <img id="imgRefrigerante" src="./arquivos/guarana-antarctica.jpg" alt="image-guarana" />
+                            <p>R$8,00</p>
+                        </a>
+                    </div>
+                </li>
+                <ul>
 
-
-
-            
-            <li>
-                <div id="box">
-                    <a href="#napolitana">
-                        <p id="texto">Napolitana</p>
-                        <img id="imgPizza" src="./arquivos/napolitana.jpeg" alt="image-pizza" />
-                        <p id="texto">R$35,00</p>
-                    </a>
-                </div>
-            </li>
-        </ul>
+        </div>
     </div>
-
-
-
-    <div id="refrigerante">
-        <h3 id="subtittle">Refrigerante</h3>
-        <ul>
-            <li>
-                <div id="box">
-                    <a href="#coca-cola">
-                        <input type="">
-                        <p id="texto">Coca-Cola</p>
-                        <img id="imgRefrigerante" src="./arquivos/refrigerante_coca_cola_350ml.png" alt="image-coca" />
-                        <p>R$8,00</p>
-                    </a>
-                </div id="box">
-            </li>
-            <li>
-                <div id="box">
-                    <a href="#guarana">
-                        <p id="texto">Guaraná Antartica</p>
-                        <img id="imgRefrigerante" src="./arquivos/guarana-antarctica.jpg" alt="image-guarana" />
-                        <p>R$8,00</p>
-                    </a>
-                </div>
-            </li>
-        <ul>
-
-    </div>
-
 
 </body>
+<script src="./script.js"></script>
 
 </html>
